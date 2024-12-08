@@ -22,7 +22,7 @@ Run server
 yarn watch:server
 ```
 
-Run webpack-dev-server - http://localhost:9000
+Run webpack-dev-server - http://localhost:5000
 ```
 yarn watch:client
 ```
