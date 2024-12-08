@@ -90,6 +90,22 @@ class App extends Component {
           rejectCall={this.rejectCallHandler}
           callFrom={callFrom}
         />
+
+            <footer 
+  style={{
+    position: 'fixed',
+    left: '0',
+    bottom: '0',
+    width: '100%',
+    backgroundColor: 'transparent',  // Transparent background
+    color: 'white',
+    textAlign: 'center',
+    padding: '20px',
+    fontSize: '14px'
+  }}
+>
+  <p>&copy; 2024 Ranjeet Kumar. All rights reserved.</p>
+</footer>
       </div>
     );
   }
