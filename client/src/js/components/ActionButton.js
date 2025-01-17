@@ -1,3 +1,7 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable comma-dangle */
+/* eslint-disable linebreak-style */
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
@@ -8,7 +12,7 @@ export default function ActionButton({ className, disabled = false, icon, onClic
   return (
     <button
       type="button"
-      className={classnames('btn-action', { disabled }, className,'call-btn')}
+      className={classnames('btn-action', { disabled }, className, 'call-btn')}
       onClick={onClick}
     >
       <FontAwesomeIcon icon={icon} color="white" />
@@ -19,7 +23,6 @@ export default function ActionButton({ className, disabled = false, icon, onClic
 ActionButton.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
-  // eslint-disable-next-line react/forbid-prop-types
   icon: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired,
 };
