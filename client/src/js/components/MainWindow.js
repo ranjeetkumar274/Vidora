@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { faPhone, faVideo } from '@fortawesome/free-solid-svg-icons';
 import ActionButton from './ActionButton';
 import { socket } from '../communication';
-import './MainWindow.css';
+import './MainWindow.scss';
 
 function useClientID() {
   const [clientID, setClientID] = useState('');
