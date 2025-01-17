@@ -1,5 +1,5 @@
 .container-main-window {
-    position: fixed;
+  
     height: 36vw; 
     width: 92vw; 
     padding: 2rem; 
@@ -59,7 +59,8 @@
 
   @media (max-width: 790px) {
     .container-main-window {
-        display: flex;
+      margin-top: 20rem;
+      display: flex;
       flex-direction: column; /* Stack containers vertically for smaller screens. */
       gap: 5rem; /* Reduce gap between elements. */
       align-items: center;
