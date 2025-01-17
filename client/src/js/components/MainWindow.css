@@ -1,0 +1,94 @@
+.container-main-window {
+    position: fixed;
+    height: 36vw; 
+    width: 92vw; 
+    padding: 2rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%; 
+    margin-left: 5%;
+    margin-top: 5vh; 
+    margin-right: 5%;
+  
+    .container-1,
+    .container-2 {
+      height: 30vw;
+      width: 30vw;
+      background-color: rgba(55, 81, 127, 0.49);
+      padding: 5rem;
+      backdrop-filter: blur(19px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.095);
+      border-radius: 0.625rem; 
+      display: flex;
+      flex-direction: column;
+
+
+      .txt-clientId-own{
+        margin-bottom: 2vw;
+      }
+
+  
+      .txt-clientId-own,
+      input {
+        margin-top: 0.625rem; 
+        background-color: rgb(22, 22, 142);
+        border: none;
+        border-radius: 0.3125rem;
+        padding: 0.9375rem; 
+        width: 20vw; 
+        color: white;
+      }
+  
+      .instructions {
+        display: flex;
+        flex-direction: column; /* Ensure items stack vertically */
+        padding: 0; /* Remove padding if not needed */
+        }
+      
+        .instructions ul {
+            padding-left: 0; /* Reset padding */
+            margin-left: -10px; /* Move list to the left */
+          }
+          
+          .instructions li {
+            list-style-position: inside;
+          }
+    }
+  }
+
+  @media (max-width: 790px) {
+    .container-main-window {
+        display: flex;
+      flex-direction: column; /* Stack containers vertically for smaller screens. */
+      gap: 5rem; /* Reduce gap between elements. */
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      margin-left: 0.1%;
+
+      
+      
+    
+  
+    .container-1,
+    .container-2 {
+      width: 100%; /* Shrink width for smaller screens. */
+      height: 300%; /* Let height adapt to content. */
+
+
+      .txt-clientId-own,
+      input {
+        margin-top: 0.625rem; 
+        background-color: rgb(22, 22, 142);
+        border: none;
+        border-radius: 0.3125rem;
+        padding: 0.9375rem; 
+        width: 50vw; 
+        color: white;
+      }
+
+    }
+}
+}
+  

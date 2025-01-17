@@ -3,14 +3,18 @@
 @import "variables";
 @import "shared/base";
 
-html {
-  background: url("https://picsum.photos/2560/1440") center no-repeat fixed;
-}
 
 body {
-  background: rgba(#000000, 0.6);
-  padding: 0px 20px 20px 20px;
-  min-height: 100vh;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),  /* Black with 50% transparency */
+      rgba(0, 0, 0, 0.4)
+    ),url("/src/css/30708777_7716416.jpg") no-repeat center; /* Use no-repeat and center */
+  background-size: auto; /* Retain the image's original size */
+  margin: 0; /* Optional: Remove default margins for consistency */
+  padding: 20px; /* Restore padding if necessary */
+  min-height: 100vh; /* Optional: Set the viewport height */
+  min-width: 100vw; /* Optional: Set the viewport width */
 }
 
 .navbar-brand {

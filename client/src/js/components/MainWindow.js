@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { faPhone, faVideo } from '@fortawesome/free-solid-svg-icons';
 import ActionButton from './ActionButton';
 import { socket } from '../communication';
+import './MainWindow.css';
 
 function useClientID() {
   const [clientID, setClientID] = useState('');
@@ -32,20 +33,32 @@ function MainWindow({ startCall }) {
   };
 
   return (
-    <div className="container main-window">
-      <div>
+    <div className="container-main-window">
+      <div className="container-1">
+        <div className='sub-container1'>
         <h3>
-          Hi, your ID is
-          <input
-            type="text"
-            className="txt-clientId"
-            defaultValue={clientID}
-            readOnly
-          />
+          Share this Code with friends
         </h3>
-        <h4>Get started by calling a friend below</h4>
+        <input
+          type="text"
+          className="txt-clientId-own"
+          defaultValue={clientID}
+          readOnly
+        />
+        </div>
+        <div className="intructions">
+          <h5>Instructions :</h5>
+          <ul>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+          </ul>
+        </div>
       </div>
-      <div>
+      <div className="container-2">
+        <h3>Enter your friend's Code below</h3>
         <input
           type="text"
           className="txt-clientId"
@@ -56,6 +69,16 @@ function MainWindow({ startCall }) {
         <div>
           <ActionButton icon={faVideo} onClick={callWithVideo(true)} />
           <ActionButton icon={faPhone} onClick={callWithVideo(false)} />
+        </div>
+        <div className="intructions">
+          <h5>Instructions :</h5>
+          <ul>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+            <li>1. hkkah kakf ajhf</li>
+          </ul>
         </div>
       </div>
     </div>
