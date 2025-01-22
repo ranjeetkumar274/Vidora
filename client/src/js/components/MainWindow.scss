@@ -57,9 +57,10 @@
     }
   }
 
-  @media (max-width: 790px) {
+  @media (max-width: 1400px) {
     .container-main-window {
-      margin-top: 20rem;
+      margin-top: 25rem;
+      margin-bottom: 20rem;
       display: flex;
       flex-direction: column; /* Stack containers vertically for smaller screens. */
       gap: 5rem; /* Reduce gap between elements. */
