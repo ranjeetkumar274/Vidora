@@ -75,7 +75,7 @@
   
     .container-1,
     .container-2 {
-      width: 100%; /* Shrink width for smaller screens. */
+      width: 95%; /* Shrink width for smaller screens. */
       height: 300%; /* Let height adapt to content. */
 
 
@@ -86,7 +86,7 @@
         border: none;
         border-radius: 0.3125rem;
         padding: 0.9375rem; 
-        width: 50vw; 
+        width: 100%; 
         color: white;
       }
 

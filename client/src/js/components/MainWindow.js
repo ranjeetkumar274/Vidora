@@ -49,11 +49,9 @@ function MainWindow({ startCall }) {
         <div className="intructions">
           <h5>Instructions :</h5>
           <ul>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
+            <li>Your unique code is shown on the left panel.</li>
+            <li>Share this code with friends who you want to connect with.</li>
+            <li>Enjoy your communication :) </li>
           </ul>
         </div>
       </div>
@@ -73,11 +71,9 @@ function MainWindow({ startCall }) {
         <div className="intructions">
           <h5>Instructions :</h5>
           <ul>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
-            <li>1. hkkah kakf ajhf</li>
+            <li>Use the right panel where it says "Enter your friend's Code below"</li>
+            <li>Enter the code in the "Your friend ID" field</li>
+            <li>You have options to connect via video call (camera icon) or phone call (phone icon).</li>
           </ul>
         </div>
       </div>
