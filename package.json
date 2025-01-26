@@ -7,7 +7,8 @@
     "start": "node server/index.js",
     "watch:client": "webpack serve --config client/webpack-dev.config.js",
     "watch:server": "nodemon server/index.js",
-    "lint": "eslint --max-warnings 0 --ignore-path .gitignore ."
+    "lint": "eslint --max-warnings 0 --ignore-path .gitignore .",
+    "dev": "concurrently \"yarn watch:client\" \"yarn watch:server\""
   },
   "dependencies": {
     "@babel/core": "7.25.2",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "@popperjs/core": "2.11.8",
+    "concurrently": "9.1.2",
     "eslint": "8.56.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
