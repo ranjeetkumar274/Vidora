@@ -58,8 +58,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nguymin4/react-videocall.git"
+    "url": "git+https://github.com/ranjeetkumar274/Vidora"
   },
-  "author": "Minh Son Nguyen",
+  "author": "Ranjeet Kumar",
   "license": "MIT"
 }
